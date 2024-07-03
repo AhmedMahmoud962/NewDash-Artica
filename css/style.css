@@ -184,7 +184,7 @@ ul.nav-links li a .nav-icon {
   transition: top 0.4s ease, opacity 0.4s ease;
 } */
 
-.nav-container.active ul.nav-links li a .nav-icon::before {
+/* .nav-container.active ul.nav-links li a .nav-icon::before {
   display: none;
 }
 
@@ -225,7 +225,7 @@ ul.nav-links li a .nav-icon:hover::after {
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
-}
+} */
 
 .main-nav ul.nav-links li:hover .nav-icon {
   border-left: 2px solid #1dadd0;
