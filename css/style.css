@@ -1,0 +1,318 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	font-family: Roboto, sans-serif;
+}
+.nav-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 100vh;
+	background-color: #1b1e23;
+	color: #fefefe;
+	z-index: 1;
+	transition: width 0.4s;
+}
+.nav-container.active{
+	width: 260px;
+}
+.nav-container .main-nav{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.main-nav .nav-header{
+	position: relative;
+	height: 64px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #313131;
+}
+.main-nav .nav-header .logo{
+	display: flex;
+	align-items: center;
+}
+.nav-header .logo .logoImg{
+	min-width: 80px;
+	width: 80px;
+	text-align: center;
+}
+.nav-header .logo .logoImg i{
+	font-size: 35px;
+	color: yellow;
+}
+.nav-header .logo .logoText{
+	position: relative;
+	opacity: 0;
+	display: none;
+	flex-direction: column;
+	line-height: 1.1;
+	white-space: nowrap;
+}
+.nav-container.active .nav-header .logo .logoText{
+	display: flex;
+	--i: 50ms;
+	animation: showItems 0.5s forwards var(--i);
+}
+@keyframes showItems{
+	from{
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+.nav-header .logo .logoText span:nth-child(1){
+	font-weight: 600;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.nav-header .logo .logoText span:nth-child(2){
+	font-weight: thin;
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+.nav-header .nav-btn{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: #1b1e23;
+	top: 50%;
+	right: 0;
+	transform: translate(11px, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	z-index: 100;
+}
+.nav-header .nav-btn i{
+	font-size: 16px;
+	font-weight: bold;
+	transition: transform 0.4s;
+}
+.nav-container.active .nav-header .nav-btn i{
+	transform: rotate(180deg);
+}
+.main-nav ul.nav-links{
+	width: 100%;
+	margin-top: 1rem;
+	list-style: none;
+}
+.main-nav ul.nav-links li{
+	position: relative;
+	width: 100%;
+	transition: background 0.4s;
+}
+.main-nav ul.nav-links li:hover{
+	background-color: #1b2a31;
+}
+.main-nav ul.nav-links li a{
+	width: 100%;
+	text-decoration: none;
+	color: #fefefe;
+	display: flex;
+	align-items: center;
+}
+ul.nav-links li a .nav-icon{
+	display: block;
+	position: relative;
+	min-width: 80px;
+	width: 80px;
+	height: 100%;
+	padding: 14px 0px;
+	text-align: center;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	transition: border-left 0.4s;
+}
+ul.nav-links li a .nav-icon::before{
+	content: attr(data-label);
+	position: absolute;
+	top: calc(50% - 8px);
+	transform: translateY(-50%);
+	left: calc(100% + 7px);
+	color: #fefefe;
+	background-color: #1b2a31;
+	white-space: nowrap;
+	padding: 7px;
+	border-radius: 6px;
+	pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+	transition: top 0.4s ease, opacity 0.4s ease;
+}
+.nav-container.active ul.nav-links li a .nav-icon::before{
+	display: none;
+}
+ul.nav-links li a .nav-icon:hover::before{
+	opacity: 1;
+	visibility: visible;
+	z-index: 1;
+	top: 50%;
+	transform: translateY(-50%);
+}
+ul.nav-links li a .nav-icon::after{
+	content: '';
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	top: calc(50% - 8px);
+	transform: translateY(-50%);
+	right: -7px;
+	border-top: 5px solid transparent;
+	border-right: 5px solid #1b2a31;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid transparent;
+	pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+	transition: top 0.4s ease, opacity 0.4s ease;
+}
+.nav-container.active ul.nav-links li a .nav-icon::after{
+	display: none;
+}
+ul.nav-links li a .nav-icon:hover::after{
+	opacity: 1;
+	visibility: visible;
+	z-index: 1;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.main-nav ul.nav-links li:hover .nav-icon{
+	border-left: 2px solid #1dadd0;
+}
+ul.nav-links li a .nav-icon i{
+	font-size: 22px;
+}
+ul.nav-links li a .nav-text{
+	position: relative;
+	font-size: 1rem;
+	white-space: nowrap;
+	opacity: 0;
+	display: none;
+}
+.nav-container.active ul.nav-links li a .nav-text{
+	display: block;
+	animation: showItems 0.5s forwards ease var(--i);
+}
+ul.nav-links li:nth-of-type(1) .nav-text{
+	--i: 50ms;
+}
+ul.nav-links li:nth-of-type(2) .nav-text{
+	--i: 100ms;
+}
+ul.nav-links li:nth-of-type(3) .nav-text{
+	--i: 150ms;
+}
+ul.nav-links li:nth-of-type(4) .nav-text{
+	--i: 200ms;
+}
+ul.nav-links li:nth-of-type(5) .nav-text{
+	--i: 250ms;
+}
+ul.nav-links li:nth-of-type(6) .nav-text{
+	--i: 300ms;
+}
+ul.nav-links li:nth-of-type(7) .nav-text{
+	--i: 350ms;
+}
+ul.nav-links li:nth-of-type(8) .nav-text{
+	--i: 400ms;
+}
+.main-nav .user-profile{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	padding: 0px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid #313131;
+}
+.user-profile .user{
+	position: relative;
+	white-space: nowrap;
+	display: none;
+}
+.nav-container.active .user-profile .user{
+	display: flex;
+	opacity: 0;
+	--i: 50ms;
+	animation: showItems 0.5s forwards var(--i);
+}
+.user-profile .user .userImage{
+	width: 40px;
+	height: 40px;
+}
+.user-profile .user .userImage img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	border-radius: 6px;
+}
+.user-profile .user .userName{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 10px;
+}
+.user-profile .user .userName span:nth-child(1){
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.user-profile .user .userName span:nth-child(2){
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+.user-profile .logoutBtn{
+	max-width: 80px;
+	width: 80px;
+	text-align: center;
+}
+.nav-container.active .user-profile .logoutBtn{
+	opacity: 0;
+	text-align: right;
+	--i: 100ms;
+	animation: btnShow 0.5s forwards ease var(--i);
+}
+@keyframes btnShow{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.user-profile .logoutBtn i{
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.nav-container ~ .pageContents{
+	position: relative;
+	width: calc(100% - 80px);
+	left: 80px;
+	padding: 10px 30px;
+	transition: width 0.4s, left 0.4s;
+}
+.nav-container.active ~ .pageContents{
+	width: calc(100% - 260px);
+	left: 260px;
+	transition: width 0.4s, left 0.4s;
+}
