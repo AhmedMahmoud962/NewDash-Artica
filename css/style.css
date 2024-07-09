@@ -406,3 +406,14 @@ ul.nav-links li:nth-of-type(8) .nav-text {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+.container-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.container-details .details {
+  width: 80%;
+}
