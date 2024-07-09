@@ -385,7 +385,6 @@ ul.nav-links li:nth-of-type(8) .nav-text {
 /* page knowladge */
 .pageContents {
   background: linear-gradient(rgba(120, 181, 232, 0.5), rgba(255, 255, 255, 1));
-  height: 100vh;
   padding: 40px 20px;
 }
 

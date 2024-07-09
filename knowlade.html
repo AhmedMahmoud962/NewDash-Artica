@@ -2,20 +2,21 @@
 <html>
 
 <head>
-  <!--   Link To The CSS Style Sheet   -->
+  <!--  *****   Link To The CSS Style Sheet   *****  -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!--   Link To Font Awsome Icons     -->
+
+  <!--  *****   Link To Font Awsome Icons   *****  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <title>Dashboard Menu</title>
 </head>
 
 <body>
-  <!--     Nav Container Starts    -->
+  <!--  *****   Nav Container Starts   *****  -->
   <section class="nav-container">
     <nav class="main-nav">
-      <!--     Nav Header Starts     -->
+      <!--  *****   Nav Header Starts   *****  -->
       <header class="nav-header">
         <div class="logo">
           <div class="logoImg">
@@ -30,8 +31,8 @@
           <i class="fa-solid fa-arrow-right"></i>
         </div>
       </header>
-      <!--     Nav Header Ends     -->
-      <!--     Nav Links Starts     -->
+      <!--  *****   Nav Header Ends   *****  -->
+      <!--  *****   Nav Links Starts   *****  -->
       <ul class="nav-links">
         <li>
           <a href="Dashboard Menu.html">
@@ -59,8 +60,8 @@
         </li>
 
       </ul>
-      <!--     Nav Links Ends     -->
-      <!--     User Profile Starts  -->
+      <!--  *****   Nav Links Ends   *****  -->
+      <!--  *****   User Profile Starts   *****  -->
       <div class="user-profile">
         <div class="user">
           <div class="userImage">
@@ -75,20 +76,69 @@
           <i class="fa-solid fa-right-from-bracket"></i>
         </div>
       </div>
-      <!--     User Profile Ends  -->
+      <!--  *****   User Profile Ends   *****  -->
     </nav>
   </section>
-  <!--     Nav Container Ends     -->
+  <!--  *****   Nav Container Ends   *****  -->
 
-  <!--     Page Contents Starts     -->
-  <div class="pageContents">
-    <h2>Knowladge</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-  </div>
-  <!--     Page Contents Ends     -->
+  <!--  *****   Page Contents Starts   *****  -->
+  <section class="pageContents">
+    <h1>Brain AI</h1>
+    <!--  *****   start of banner   *****  -->
+    <article class="container-fluid pt-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="banner text-center">
+            <div class="row mt-4">
+              <div class="col-4">
+                <p>Snippets uploaded</p>
+                <p class="stat">1</p>
+              </div>
+              <div class="col-4">
+                <p>Websites uploaded</p>
+                <p class="stat">0</p>
+              </div>
+              <div class="col-4">
+                <p>Files uploaded</p>
+                <p class="stat">2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!--  *****   end of banner   *****  -->
+    <!-- *****   start of content   ***** -->
+    <article class="container container-details mt-5 p-3 col-6">
+      <div class="details">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="websites-tab" data-toggle="tab" href="#websites" role="tab"
+              aria-controls="websites" aria-selected="true">Websites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="files-tab" data-toggle="tab" href="#files" role="tab" aria-controls="files"
+              aria-selected="false">Files</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="websites" role="tabpanel" aria-labelledby="websites-tab">
+            <p class="pt-5">websites</p>
+          </div>
+          <!-- start other dates -->
+          <div class="tab-pane fade p-4" id="files" role="tabpanel" aria-labelledby="files-tab">
+            <p class="pt-5">files</p>
+          </div>
+          <!-- end other dates -->
+        </div>
+      </div>
+    </article>
+  </section>
+  <!--  *****   Page Contents Ends   *****  -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
   <script src="js/script.js"></script>
 </body>
 
