@@ -384,7 +384,8 @@ ul.nav-links li:nth-of-type(8) .nav-text {
 
 /* page knowladge */
 .pageContents {
-  background: linear-gradient(rgba(120, 181, 232, 0.5), rgba(255, 255, 255, 1));
+  background: linear-gradient(rgba(120, 181, 232, 0.5), rgba(234, 234, 234, 0.318));
+  height: 100vh;
   padding: 40px 20px;
 }
 
@@ -395,7 +396,7 @@ ul.nav-links li:nth-of-type(8) .nav-text {
 }
 
 .pageContents .banner {
-  background: linear-gradient(to right, #5089e7, #3b82f6);
+  background: linear-gradient(to right, #6084bf, #3b82f6);
   padding: 20px;
   border-radius: 15px;
   color: white;
@@ -428,4 +429,20 @@ ul.nav-links li:nth-of-type(8) .nav-text {
 
 .uploader label {
   cursor: pointer;
+}
+
+.card-file .data-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.card-body .url-name {
+  color: #999;
+  text-decoration: none;
+}
+
+.card-body .date {
+  color: #999;
 }
