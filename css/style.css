@@ -127,8 +127,9 @@ body {
 
 .main-nav ul.nav-links {
   width: 100%;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   list-style: none;
+  margin-top: 100px;
 }
 
 .main-nav ul.nav-links li {
@@ -146,7 +147,6 @@ body {
   width: 100%;
   text-decoration: none;
   color: #000000;
-  /* Change text color to black */
   display: flex;
   align-items: center;
 }
@@ -163,7 +163,6 @@ ul.nav-links li a .nav-icon {
   border-right: 2px solid transparent;
   transition: border-left 0.4s;
   color: black;
-  /* Change icon color to black */
 }
 
 /* ul.nav-links li a .nav-icon::before {
@@ -234,7 +233,6 @@ ul.nav-links li a .nav-icon:hover::after {
 ul.nav-links li a .nav-icon i {
   font-size: 22px;
   color: black;
-  /* Change icon color to black */
 }
 
 ul.nav-links li a .nav-text {
@@ -333,14 +331,12 @@ ul.nav-links li:nth-of-type(8) .nav-text {
   font-weight: 600;
   letter-spacing: 1px;
   color: black;
-  /* Change text color to black */
 }
 
 .user-profile .user .userName span:nth-child(2) {
   font-size: 14px;
   letter-spacing: 2px;
   color: black;
-  /* Change text color to black */
 }
 
 .user-profile .logoutBtn {
@@ -370,7 +366,6 @@ ul.nav-links li:nth-of-type(8) .nav-text {
   font-size: 20px;
   cursor: pointer;
   color: black;
-  /* Change icon color to black */
 }
 
 .nav-container~.pageContents {
