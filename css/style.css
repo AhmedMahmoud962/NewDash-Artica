@@ -417,3 +417,15 @@ ul.nav-links li:nth-of-type(8) .nav-text {
 .container-details .details {
   width: 80%;
 }
+
+.uploader {
+  text-align: center;
+  border: 1px dotted royalblue;
+  margin: 15px 0;
+  padding: 30px 0;
+  border-radius: 5px;
+}
+
+.uploader label {
+  cursor: pointer;
+}
