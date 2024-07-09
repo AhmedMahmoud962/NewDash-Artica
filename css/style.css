@@ -48,8 +48,8 @@ body {
 }
 
 .nav-header .logo .logoImg {
-  min-width: 60px;
-  width: 60px;
+  min-width: 80px;
+  width: 80px;
   text-align: center;
 }
 
@@ -154,8 +154,8 @@ body {
 ul.nav-links li a .nav-icon {
   display: block;
   position: relative;
-  min-width: 60px;
-  width: 60px;
+  min-width: 80px;
+  width: 80px;
   height: 100%;
   padding: 14px 0px;
   text-align: center;
