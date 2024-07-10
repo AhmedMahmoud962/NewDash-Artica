@@ -57,7 +57,6 @@ body {
 .nav-header .logo .logoImg i {
   font-size: 35px;
   color: black;
-  /* Change icon color to black */
 }
 
 .nav-header .logo .logoText {
@@ -387,8 +386,8 @@ ul.nav-links li:nth-of-type(8) .nav-text {
 .pageContents {
   background: linear-gradient(rgba(120, 181, 232, 0.5), rgba(234, 234, 234, 0.318));
   height: auto;
-  padding: 40px 20px;
 }
+
 
 .pageContents h1 {
   padding: 0 12px;
