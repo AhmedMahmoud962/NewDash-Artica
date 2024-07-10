@@ -443,6 +443,10 @@ ul.nav-links li:nth-of-type(8) .nav-text {
   text-decoration: none;
 }
 
+.data-card a .active:hover {
+  color: #3a86ff;
+}
+
 .card-body .date {
   color: #999;
 }
