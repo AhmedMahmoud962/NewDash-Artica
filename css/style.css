@@ -537,6 +537,7 @@ ul.nav-links li:nth-of-type(8) .nav-text {
   transition: background-color 0.3s;
   border: 1px solid #ddd;
   margin: 0 4px;
+  border-radius: 25px;
 }
 
 .pagination a:hover {
@@ -544,9 +545,9 @@ ul.nav-links li:nth-of-type(8) .nav-text {
 }
 
 .pagination a.active {
-  background-color: #4CAF50;
+  background-color: #3a86ff;
   color: white;
-  border: 1px solid #4CAF50;
+
 }
 
 @media (max-width:768px) {
