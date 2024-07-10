@@ -10,7 +10,20 @@
 
   <!--     Link To Font Awsome Icons  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-  <title>Dashboard Menu</title>
+  <title>Knowledge</title>
+  <style>
+    .table-striped>tbody>tr:nth-of-type(odd)>* {
+      --bs-table-bg-type: none;
+    }
+
+    .table>:not(caption)>*>* {
+      box-shadow: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -169,7 +182,336 @@
           <!-- end websites data -->
           <!-- start files data -->
           <div class="tab-pane fade p-4" id="files" role="tabpanel" aria-labelledby="files-tab">
-            <table></table>
+            <div class="table-responsive">
+              <table id="myTable" class="table table-hover table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col" style="color: #8F95B2;">ID Number</th>
+                    <th scope="col" style="color: #8F95B2;">Catagory name</th>
+                    <th scope="col" style="color: #8F95B2;">Number of files</th>
+                    <th scope="col" style="color: #8F95B2;">Created</th>
+                    <th scope="col" style="color: #8F95B2;">Last Update</th>
+                    <th scope="col" style="color: #8F95B2;">Status</th>
+                    <th class="text-end" scope="col" style="color: #8F95B2;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                  <tr class="align-middle">
+                    <td class="text-nowrap">ID 1</td>
+                    <td class="text-nowrap">
+                      <div class="d-flex justify-content-start align-items-center  ">
+                        <i class="fa-solid fa-folder-closed fa-xl p-1" style="color: #74C0FC;"></i>
+                        <a href="Diseases.html">Medcine images</a>
+                      </div>
+                    </td>
+                    <td class="text-nowrap">20,837 files</td>
+                    <td class="text-nowrap">11:54 AM</td>
+                    <td class="text-nowrap">12:44 PM</td>
+                    <td><span class="publish">Published</span></td>
+                    <td class="text-end">
+                      <div class="dropdown font-sans-serif position-static">
+                        <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal" type="button"
+                          data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
+                          aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-end border py-0">
+                          <div class="py-2">
+                            <a class="dropdown-item" href="edit_knowledge.html">Edit</a>
+                            <a class="dropdown-item" href="#!">Move to trash</a>
+                            <a class="dropdown-item" href="#!">Unpublish</a>
+                            <a class="dropdown-item text-danger" href="#!">Download</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="align-middle">
+                    <td class="text-nowrap">ID 1</td>
+                    <td class="text-nowrap">
+                      <div class="d-flex justify-content-start align-items-center  ">
+                        <i class="fa-solid fa-folder-closed fa-xl p-1" style="color: #74C0FC;"></i>
+                        <a href="Diseases.html">Medcine images</a>
+                      </div>
+                    </td>
+                    <td class="text-nowrap">20,837 files</td>
+                    <td class="text-nowrap">11:54 AM</td>
+                    <td class="text-nowrap">12:44 PM</td>
+                    <td><span class="publish">Published</span></td>
+                    <td class="text-end">
+                      <div class="dropdown font-sans-serif position-static">
+                        <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal" type="button"
+                          data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
+                          aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-end border py-0">
+                          <div class="py-2">
+                            <a class="dropdown-item" href="edit_knowledge.html">Edit</a>
+                            <a class="dropdown-item" href="#!">Move to trash</a>
+                            <a class="dropdown-item" href="#!">Unpublish</a>
+                            <a class="dropdown-item text-danger" href="#!">Download</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="align-middle">
+                    <td class="text-nowrap">ID 1</td>
+                    <td class="text-nowrap">
+                      <div class="d-flex justify-content-start align-items-center  ">
+                        <i class="fa-solid fa-folder-closed fa-xl p-1" style="color: #74C0FC;"></i>
+                        <a href="Diseases.html">Medcine images</a>
+                      </div>
+                    </td>
+                    <td class="text-nowrap">20,837 files</td>
+                    <td class="text-nowrap">11:54 AM</td>
+                    <td class="text-nowrap">12:44 PM</td>
+                    <td><span class="unpublish">UnPublish</span></td>
+                    <td class="text-end">
+                      <div class="dropdown font-sans-serif position-static">
+                        <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal" type="button"
+                          data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
+                          aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-end border py-0">
+                          <div class="py-2">
+                            <a class="dropdown-item" href="edit_knowledge.html">Edit</a>
+                            <a class="dropdown-item" href="#!">Move to trash</a>
+                            <a class="dropdown-item" href="#!">Unpublish</a>
+                            <a class="dropdown-item text-danger" href="#!">Download</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="align-middle">
+                    <td class="text-nowrap">ID 1</td>
+                    <td class="text-nowrap">
+                      <div class="d-flex justify-content-start align-items-center  ">
+                        <i class="fa-solid fa-folder-closed fa-xl p-1" style="color: #74C0FC;"></i>
+                        <a href="Diseases.html">Medcine images</a>
+                      </div>
+                    </td>
+                    <td class="text-nowrap">20,837 files</td>
+                    <td class="text-nowrap">11:54 AM</td>
+                    <td class="text-nowrap">12:44 PM</td>
+                    <td><span class="unpublish">UnPublish</span></td>
+                    <td class="text-end">
+                      <div class="dropdown font-sans-serif position-static">
+                        <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal" type="button"
+                          data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
+                          aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-end border py-0">
+                          <div class="py-2">
+                            <a class="dropdown-item" href="edit_knowledge.html">Edit</a>
+                            <a class="dropdown-item" href="#!">Move to trash</a>
+                            <a class="dropdown-item" href="#!">Unpublish</a>
+                            <a class="dropdown-item text-danger" href="#!">Download</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="align-middle">
+                    <td class="text-nowrap">ID 1</td>
+                    <td class="text-nowrap">
+                      <div class="d-flex justify-content-start align-items-center  ">
+                        <i class="fa-solid fa-folder-closed fa-xl p-1" style="color: #74C0FC;"></i>
+                        <a href="Diseases.html">Medcine images</a>
+                      </div>
+                    </td>
+                    <td class="text-nowrap">20,837 files</td>
+                    <td class="text-nowrap">11:54 AM</td>
+                    <td class="text-nowrap">12:44 PM</td>
+                    <td><span class="unpublish">UnPublish</span></td>
+                    <td class="text-end">
+                      <div class="dropdown font-sans-serif position-static">
+                        <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal" type="button"
+                          data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
+                          aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-end border py-0">
+                          <div class="py-2">
+                            <a class="dropdown-item" href="edit_knowledge.html">Edit</a>
+                            <a class="dropdown-item" href="#!">Move to trash</a>
+                            <a class="dropdown-item" href="#!">Unpublish</a>
+                            <a class="dropdown-item text-danger" href="#!">Download</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="align-middle">
+                    <td class="text-nowrap">ID 1</td>
+                    <td class="text-nowrap">
+                      <div class="d-flex justify-content-start align-items-center  ">
+                        <i class="fa-solid fa-folder-closed fa-xl p-1" style="color: #74C0FC;"></i>
+                        <a href="Diseases.html">Medcine images</a>
+                      </div>
+                    </td>
+                    <td class="text-nowrap">20,837 files</td>
+                    <td class="text-nowrap">11:54 AM</td>
+                    <td class="text-nowrap">12:44 PM</td>
+                    <td><span class="publish">Published</span></td>
+                    <td class="text-end">
+                      <div class="dropdown font-sans-serif position-static">
+                        <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal" type="button"
+                          data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
+                          aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-end border py-0">
+                          <div class="py-2">
+                            <a class="dropdown-item" href="edit_knowledge.html">Edit</a>
+                            <a class="dropdown-item" href="#!">Move to trash</a>
+                            <a class="dropdown-item" href="#!">Unpublish</a>
+                            <a class="dropdown-item text-danger" href="#!">Download</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="align-middle">
+                    <td class="text-nowrap">ID 1</td>
+                    <td class="text-nowrap">
+                      <div class="d-flex justify-content-start align-items-center  ">
+                        <i class="fa-solid fa-folder-closed fa-xl p-1" style="color: #74C0FC;"></i>
+                        <a href="Diseases.html">Medcine images</a>
+                      </div>
+                    </td>
+                    <td class="text-nowrap">20,837 files</td>
+                    <td class="text-nowrap">11:54 AM</td>
+                    <td class="text-nowrap">12:44 PM</td>
+                    <td><span class="publish">Published</span></td>
+                    <td class="text-end">
+                      <div class="dropdown font-sans-serif position-static">
+                        <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal" type="button"
+                          data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
+                          aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-end border py-0">
+                          <div class="py-2">
+                            <a class="dropdown-item" href="edit_knowledge.html">Edit</a>
+                            <a class="dropdown-item" href="#!">Move to trash</a>
+                            <a class="dropdown-item" href="#!">Unpublish</a>
+                            <a class="dropdown-item text-danger" href="#!">Download</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="align-middle">
+                    <td class="text-nowrap">ID 1</td>
+                    <td class="text-nowrap">
+                      <div class="d-flex justify-content-start align-items-center  ">
+                        <i class="fa-solid fa-folder-closed fa-xl p-1" style="color: #74C0FC;"></i>
+                        <a href="Diseases.html">Medcine images</a>
+                      </div>
+                    </td>
+                    <td class="text-nowrap">20,837 files</td>
+                    <td class="text-nowrap">11:54 AM</td>
+                    <td class="text-nowrap">12:44 PM</td>
+                    <td><span class="unpublish">UnPublish</span></td>
+                    <td class="text-end">
+                      <div class="dropdown font-sans-serif position-static">
+                        <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal" type="button"
+                          data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
+                          aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-end border py-0">
+                          <div class="py-2">
+                            <a class="dropdown-item" href="edit_knowledge.html">Edit</a>
+                            <a class="dropdown-item" href="#!">Move to trash</a>
+                            <a class="dropdown-item" href="#!">Unpublish</a>
+                            <a class="dropdown-item text-danger" href="#!">Download</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="align-middle">
+                    <td class="text-nowrap">ID 1</td>
+                    <td class="text-nowrap">
+                      <div class="d-flex justify-content-start align-items-center  ">
+                        <i class="fa-solid fa-folder-closed fa-xl p-1" style="color: #74C0FC;"></i>
+                        <a href="Diseases.html">Medcine images</a>
+                      </div>
+                    </td>
+                    <td class="text-nowrap">20,837 files</td>
+                    <td class="text-nowrap">11:54 AM</td>
+                    <td class="text-nowrap">12:44 PM</td>
+                    <td><span class="unpublish">UnPublish</span></td>
+                    <td class="text-end">
+                      <div class="dropdown font-sans-serif position-static">
+                        <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal" type="button"
+                          data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
+                          aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-end border py-0">
+                          <div class="py-2">
+                            <a class="dropdown-item" href="edit_knowledge.html">Edit</a>
+                            <a class="dropdown-item" href="#!">Move to trash</a>
+                            <a class="dropdown-item" href="#!">Unpublish</a>
+                            <a class="dropdown-item text-danger" href="#!">Download</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="align-middle">
+                    <td class="text-nowrap">ID 1</td>
+                    <td class="text-nowrap">
+                      <div class="d-flex justify-content-start align-items-center  ">
+                        <i class="fa-solid fa-folder-closed fa-xl p-1" style="color: #74C0FC;"></i>
+                        <a href="Diseases.html">Medcine images</a>
+                      </div>
+                    </td>
+                    <td class="text-nowrap">20,837 files</td>
+                    <td class="text-nowrap">11:54 AM</td>
+                    <td class="text-nowrap">12:44 PM</td>
+                    <td><span class="publish">Published</span></td>
+                    <td class="text-end">
+                      <div class="dropdown font-sans-serif position-static">
+                        <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal" type="button"
+                          data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
+                          aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-end border py-0">
+                          <div class="py-2">
+                            <a class="dropdown-item" href="edit_knowledge.html">Edit</a>
+                            <a class="dropdown-item" href="#!">Move to trash</a>
+                            <a class="dropdown-item" href="#!">Unpublish</a>
+                            <a class="dropdown-item text-danger" href="#!">Download</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="align-middle">
+                    <td class="text-nowrap">ID 1</td>
+                    <td class="text-nowrap">
+                      <div class="d-flex justify-content-start align-items-center  ">
+                        <i class="fa-solid fa-folder-closed fa-xl p-1" style="color: #74C0FC;"></i>
+                        <a href="Diseases.html">Medcine images</a>
+                      </div>
+                    </td>
+                    <td class="text-nowrap">20,837 files</td>
+                    <td class="text-nowrap">11:54 AM</td>
+                    <td class="text-nowrap">12:44 PM</td>
+                    <td><span class="publish">Published</span></td>
+                    <td class="text-end">
+                      <div class="dropdown font-sans-serif position-static">
+                        <button class="btn btn-link text-600 btn-sm dropdown-toggle btn-reveal" type="button"
+                          data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true"
+                          aria-expanded="false"><span class="fas fa-ellipsis-h fs--1"></span></button>
+                        <div class="dropdown-menu dropdown-menu-end border py-0">
+                          <div class="py-2">
+                            <a class="dropdown-item" href="edit_knowledge.html">Edit</a>
+                            <a class="dropdown-item" href="#!">Move to trash</a>
+                            <a class="dropdown-item" href="#!">Unpublish</a>
+                            <a class="dropdown-item text-danger" href="#!">Download</a>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Pagination buttons -->
+              <div class="pagination-container text-center mt-5">
+                <button id="prevPage" class="btn btn-primary">Previous</button>
+                <button id="nextPage" class="btn btn-primary">Next</button>
+              </div>
+            </div>
           </div>
           <!-- end files data -->
         </div>
@@ -241,6 +583,7 @@
     <!--end popup -->
   </section>
   <!--     Page Contents Ends     -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
