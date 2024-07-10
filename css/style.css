@@ -407,14 +407,14 @@ ul.nav-links li:nth-of-type(8) .nav-text {
   font-weight: bold;
 }
 
-.container-details {
+.container-details-tap {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
 }
 
-.container-details .details {
+.container-details-tap .details-tab {
   width: 86%;
 }
 
@@ -551,11 +551,7 @@ ul.nav-links li:nth-of-type(8) .nav-text {
 }
 
 @media (max-width:768px) {
-  .nav-container~.pageContents {
-    position: relative;
-    width: calc(100% - 80px);
-    left: 80px;
-    padding: 70px 20px;
-    transition: width 0.4s, left 0.4s;
+  .container-details-tap .details-tab {
+    width: 100%;
   }
 }
